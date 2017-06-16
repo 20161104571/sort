@@ -16,7 +16,7 @@ int main(int argc, const char * argv[]) {
     int i,j,t,n;
     fp1=fopen("//Users//w20161104571//Desktop//sort//sortout.txt","w+");
     fp2=fopen("//Users//w20161104571//Desktop//sort//sort.txt","r+");
-    if (fp2==NULL)
+       if (fp2==NULL)
         {
             printf("打开文件错误，要打开的文件可能不存在");
         }
@@ -28,7 +28,7 @@ int main(int argc, const char * argv[]) {
                 {
                     fscanf(fp2,"%d",&a[i]);
                 }
-                for(j=0;j<n-i;j++)
+                for(j=0;j<n-1;j++)
                 {
                     for(k=0;k<n-1-j;k++)
                     {
@@ -51,6 +51,7 @@ int main(int argc, const char * argv[]) {
             fclose(fp1);
             fclose(fp2);
         }
+    
         return 0;
     }
 
